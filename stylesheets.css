@@ -1,0 +1,332 @@
+@font-face {
+    font-family: ReklameScriptRegularDEMO;
+    src: url(fonts/ReklameScript-Regular_DEMO.otf);
+}
+
+@font-face {
+    font-family: LatoBlack;
+    src: url(fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url(fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: LatoLightItalic;
+    src: url(fonts/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+body {
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+    color: #d9d9d9;
+    margin: 0px;
+}
+
+a, a:visited {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6760;
+}
+
+p {
+    font-family: LatoLight;
+}
+
+b {
+    font-family: LatoBlack;
+}
+
+i {
+    font-family: LatoLightItalic
+}
+
+.header { 
+    background-color: #262626;
+}
+
+.header::after {
+    content: "";
+    display: table;
+
+    clear:both;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    width: 1110px;
+}
+
+h1 {
+    font-family: ReklameScriptRegularDEMO;
+    float: left;
+    margin: 0;
+    padding-top: 37px;
+    padding-bottom: 30px;
+}
+
+h1 a {
+    font-size: 28px;
+    font-weight: normal;
+    display: inline;
+
+    vertical-align: top;
+}
+
+h1 a::before {
+    content: url(img/home_0000s_0000s_0000_Logo-Icon.png);
+}
+
+/*A versions older ie6 will hide symbol "W" from logo and show picture instead him*/
+.W[class] {
+    display: none;
+}
+
+.header ul {
+    font-family: LatoBlack;
+    font-size: 13px;
+    float: right;
+    margin: 0px;
+    padding: 45px 0;
+}
+
+.header ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.slider {
+    line-height: 50px;
+    padding: 60px 0;
+    background-color: #2a2a2a;
+}
+
+.slider h2 {
+    font-family: LatoLight;
+    font-size: 60px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.slider p {
+    font-family: LatoLight;
+    font-size: 40px;
+}
+
+.slider a {
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 44px;
+    background-color: #ff6760;
+}
+
+.slider a:hover {
+    color: #d9d9d9;
+    background-color: #595959;
+}
+
+.services {
+    background-color: #f8f8f8;
+    padding: 95px 0 90px 0;
+}
+
+.services .content div {
+    color: #616161;
+    display: inline-block;
+    margin-right: 40px;
+    width: 240px;
+}
+
+.services .content :last-child {
+    margin-right: 0px;
+}
+
+.consectetur::before {
+    content: url(img/home_0002s_0000s_0002_Android-2.png);
+}
+
+.tristiquet::before {
+    content: url(img/home_0002s_0001s_0002_Computer_iMac.png);
+}
+
+.fermentum::before {
+    content: url(img/home_0002s_0002s_0002_Camera-2.png);
+}
+
+.elitultricies::before {
+    content: url(img/home_0002s_0003s_0002_Stop-Watch.png);
+}
+
+.services .content div h3::before {
+    display: block;
+    margin-bottom: 31px;
+}
+
+.services .content div h3 {
+    font-family: LatoBlack;
+    font-size: 18px;
+}
+
+.services .content div p {
+    font-family: LatoRegular;
+    font-size: 14px;
+}
+
+.portfolio {
+    font-size: 14px;
+    color: #616161;
+    padding: 60px 0;
+}
+
+.portfolio .content h2 {
+    font-family: LatoBlack;
+    font-size: 30px;
+    color: #616161;
+    margin-top: 0;
+    margin-bottom:  26px;
+}
+
+.portfolio .content p {
+    font-size: 20px;
+    color: #616161;
+}
+
+.portfolio .content .filter {
+    font-size: 12px;
+    margin-top: 59px;
+    margin-bottom: 38px;
+    padding-left: 0px;
+}
+.portfolio .content .filter input {
+  position: absolute;
+  left: -10000px;
+}
+
+.portfolio .content .filter label {
+    display: inline-block;
+    color: #d9d9d9;
+}
+
+.portfolio .content .filter label {   
+    border-radius: 5px;
+    padding: 13px 19px;
+    background-color: #ff6760;
+}
+
+.portfolio .content .filter label:hover,
+.portfolio .content .filter input:checked + label {
+    color: #d9d9d9;
+    background-color: #595959;
+}
+
+
+.portfolio .content .works {
+    /*empty spaces fix*/
+    font-size: 0px;
+    display: table;
+
+    margin: 38px 0 20px 0;
+}
+
+.portfolio .content .works img {
+    display: inline-block;
+    padding: 5px 0;
+    padding-right: 10px;
+}
+
+.portfolio .content .works :nth-child(4n) {
+    padding-right: 0px;
+}
+
+.footer {
+    color: #bebebe;
+    padding: 60px 0;
+    background-color: #313131;
+}
+
+.footer h2 {
+    font-family: LatoBlack;
+    font-size: 30px
+    color: #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.footer  p {
+    font-size: 20px;
+}
+
+.address, .phone {
+    font-family: LatoRegular;
+    font-size: 14px;
+}
+
+.address:before {
+    content: url(img/home_0004s_0002_Fill.png);
+    margin-right: 8px;
+}
+
+.address {
+    margin-right: 50px;
+}
+
+.phone:before {
+    content: url(img/home_0004s_0003_Phone.png);
+    margin-right: 8px;
+}
+
+.footer .content ul {
+    margin-top: 30px;
+}
+
+.footer .content ul li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.footer .content ul :last-child {
+    margin-right: 0px;
+}
+
+.rss {
+    content: url(img/rss.png)
+}
+
+.facebook {
+    content: url(img/facebook.png)
+}
+
+.twitter {
+    content: url(img/twitter.png)
+}
+
+.dribbble {
+    content: url(img/dribbble.png)
+}
+
+.pinterest {
+    content: url(img/pinterest.png)
+}
+
+.copyright {
+    padding: 35px 0;
+    background-color: #2c2c2c;
+}
+
+.copyright p {
+    font-family: LatoRegular;
+    font-size: 14px;
+    color: #bebebe;
+    margin: 0px;
+}
