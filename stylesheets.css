@@ -330,3 +330,9 @@ h1 a::before {
     color: #bebebe;
     margin: 0px;
 }
+
+@media (max-width: 1110px) {
+    body {
+        width: 1110px;
+    }
+}
