@@ -1,6 +1,6 @@
 @font-face {
     font-family: ReklameScriptRegularDEMO;
-    src: url(fonts/ReklameScript-Regular_DEMO.otf);
+    src: url(fonts/ReklameScript-Regular_DEMO.woff);
 }
 
 @font-face {
@@ -124,6 +124,7 @@ h1 a::before {
 }
 
 .slider a {
+    font-family: LatoBlack;
     font-size: 14px;
     display: inline-block;
     border-radius: 5px;
@@ -205,7 +206,7 @@ h1 a::before {
 .portfolio .content .filter {
     font-size: 12px;
     margin-top: 59px;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
     padding-left: 0px;
 }
 .portfolio .content .filter input {
@@ -218,7 +219,8 @@ h1 a::before {
     color: #d9d9d9;
 }
 
-.portfolio .content .filter label {   
+.portfolio .content .filter label {
+    font-family: LatoBlack;
     border-radius: 5px;
     padding: 13px 19px;
     background-color: #ff6760;
@@ -236,7 +238,7 @@ h1 a::before {
     font-size: 0px;
     display: table;
 
-    margin: 38px 0 20px 0;
+    margin: 25px 0 20px 0;
 }
 
 .portfolio .content .works img {
@@ -299,23 +301,23 @@ h1 a::before {
     margin-right: 0px;
 }
 
-.rss {
+.rss::before {
     content: url(img/rss.png)
 }
 
-.facebook {
+.facebook:before {
     content: url(img/facebook.png)
 }
 
-.twitter {
+.twitter:before {
     content: url(img/twitter.png)
 }
 
-.dribbble {
+.dribbble:before {
     content: url(img/dribbble.png)
 }
 
-.pinterest {
+.pinterest:before {
     content: url(img/pinterest.png)
 }
 
