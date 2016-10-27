@@ -1,26 +1,31 @@
 @font-face {
     font-family: ReklameScriptRegularDEMO;
-    src: url(fonts/ReklameScript-Regular_DEMO.woff);
+    src: url(fonts/ReklameScript-Regular_DEMO.eot);
+    src: local(ReklameScriptRegularDEMO), url(fonts/ReklameScript-Regular_DEMO.woff), url(fonts/ReklameScript-Regular_DEMO.ttf);
 }
 
 @font-face {
     font-family: LatoBlack;
-    src: url(fonts/Lato-Black.ttf);
+    src: url(fonts/Lato-Black.eot);
+    src: local(LatoBlack), url(fonts/Lato-Black.ttf);
 }
 
 @font-face {
     font-family: LatoLight;
-    src: url(fonts/Lato-Light.ttf);
+    src: url(fonts/Lato-Light.eot);
+    src: local(Lato-Light), url(fonts/Lato-Light.ttf);
 }
 
 @font-face {
     font-family: LatoLightItalic;
-    src: url(fonts/Lato-LightItalic.ttf);
+    src: url(fonts/Lato-LightItalic.eot);
+    src: local(LatoLightItalic), url(fonts/Lato-LightItalic.ttf);
 }
 
 @font-face {
     font-family: LatoRegular;
-    src: url(fonts/Lato-Regular.ttf);
+    src: url(fonts/Lato-Regular.eot);
+    src: local(LatoRegular), url(fonts/Lato-Regular.ttf);
 }
 
 body {
@@ -47,14 +52,17 @@ b {
 }
 
 i {
-    font-family: LatoLightItalic
+    font-family: LatoLightItalic;
+
+    /* firefox rendering fix */
+    font-style: normal;
 }
 
 .header { 
     background-color: #262626;
 }
 
-.header::after {
+.header:after {
     content: "";
     display: table;
 
@@ -71,25 +79,30 @@ h1 {
     font-family: ReklameScriptRegularDEMO;
     float: left;
     margin: 0;
-    padding-top: 37px;
-    padding-bottom: 30px;
+    margin-top: 38px;
+    margin-bottom: 29px;
+    margin-left: 40px;
+
+    position: relative;
+    bottom: 10px;
 }
 
 h1 a {
     font-size: 28px;
     font-weight: normal;
-    display: inline;
-
-    vertical-align: top;
 }
 
 h1 a::before {
     content: url(img/home_0000s_0000s_0000_Logo-Icon.png);
+
+    position: absolute;
+    left: -40px;
+    top: 8px;
 }
 
-/*A versions older ie6 will hide symbol "W" from logo and show picture instead him*/
-.W[class] {
-    display: none;
+/* A versions older ie6 will hide symbol "W" from logo and show picture instead him */
+h1 a :nth-child(1n) {
+ display: none;
 }
 
 .header ul {
@@ -100,7 +113,13 @@ h1 a::before {
     padding: 45px 0;
 }
 
+/* defenition for ie6-7 */
 .header ul li {
+    display: inline;
+}
+
+/* :nth-child(1n) - redefinition for other browsers; */
+.header ul :nth-child(1n) {
     display: inline-block;
     padding-right: 30px;
 }
@@ -142,11 +161,17 @@ h1 a::before {
     padding: 95px 0 90px 0;
 }
 
+/* defenition for ie6-7 */
 .services .content div {
+    display: inline;
     color: #616161;
+    width: 240px;
+}
+
+/* :nth-child(1n) - redefinition for other browsers; */
+.services .content :nth-child(1n) {
     display: inline-block;
     margin-right: 40px;
-    width: 240px;
 }
 
 .services .content :last-child {
@@ -177,11 +202,13 @@ h1 a::before {
 .services .content div h3 {
     font-family: LatoBlack;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .services .content div p {
     font-family: LatoRegular;
     font-size: 14px;
+    margin: 0;
 }
 
 .portfolio {
@@ -226,12 +253,15 @@ h1 a::before {
     background-color: #ff6760;
 }
 
-.portfolio .content .filter label:hover,
-.portfolio .content .filter input:checked + label {
+.portfolio .content .filter label:hover {
     color: #d9d9d9;
     background-color: #595959;
 }
 
+.portfolio .content .filter input:checked + label {
+    color: #d9d9d9;
+    background-color: #595959;
+}
 
 .portfolio .content .works {
     /*empty spaces fix*/
@@ -265,11 +295,16 @@ h1 a::before {
     margin-bottom: 26px;
 }
 
-.footer  p {
+.footer p {
     font-size: 20px;
 }
 
-.address, .phone {
+.address {
+    font-family: LatoRegular;
+    font-size: 14px;
+}
+
+.phone {
     font-family: LatoRegular;
     font-size: 14px;
 }
@@ -292,7 +327,13 @@ h1 a::before {
     margin-top: 30px;
 }
 
+/* defenition for ie6-7 */
 .footer .content ul li {
+    display: inline;
+}
+
+/* :nth-child(1n) - redefinition for other browsers; */
+.footer .content ul  :nth-child(1n) {
     display: inline-block;
     margin-right: 7px;
 }
@@ -301,7 +342,7 @@ h1 a::before {
     margin-right: 0px;
 }
 
-.rss::before {
+.rss:before {
     content: url(img/rss.png)
 }
 
