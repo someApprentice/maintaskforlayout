@@ -161,17 +161,11 @@ h1 a :nth-child(1n) {
     padding: 95px 0 90px 0;
 }
 
-/* defenition for ie6-7 */
 .services .content div {
-    display: inline;
-    color: #616161;
-    width: 240px;
-}
-
-/* :nth-child(1n) - redefinition for other browsers; */
-.services .content :nth-child(1n) {
     display: inline-block;
     margin-right: 40px;
+    color: #616161;
+    width: 240px;
 }
 
 .services .content :last-child {
