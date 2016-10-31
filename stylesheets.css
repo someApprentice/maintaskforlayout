@@ -93,7 +93,12 @@ h1 a {
 }
 
 h1 a::before {
-    content: url(img/home_0000s_0000s_0000_Logo-Icon.png);
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -224px 0px;
+
+    width: 39px;
+    height: 33px;
 
     position: absolute;
     left: -40px;
@@ -173,19 +178,47 @@ h1 a :nth-child(1n) {
 }
 
 .consectetur::before {
-    content: url(img/home_0002s_0000s_0002_Android-2.png);
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: 0px 0px;
+
+    margin: 0 auto;
+
+    width: 47px;
+    height: 54px;
 }
 
 .tristiquet::before {
-    content: url(img/home_0002s_0001s_0002_Computer_iMac.png);
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -47px 0px;
+
+    margin: 0 auto;
+
+    width: 62px;
+    height: 59px;
 }
 
 .fermentum::before {
-    content: url(img/home_0002s_0002s_0002_Camera-2.png);
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -109px 0px;
+
+    margin: 0 auto;
+
+    width: 60px;
+    height: 56px;
 }
 
 .elitultricies::before {
-    content: url(img/home_0002s_0003s_0002_Stop-Watch.png);
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -169px 0px;
+
+    margin: 0 auto;
+
+    width: 55px;
+    height: 65px;
 }
 
 .services .content div h3::before {
@@ -304,7 +337,12 @@ h1 a :nth-child(1n) {
 }
 
 .address:before {
-    content: url(img/home_0004s_0002_Fill.png);
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -423px 0px;
+    width: 9px;
+    height: 13px;
     margin-right: 8px;
 }
 
@@ -313,7 +351,12 @@ h1 a :nth-child(1n) {
 }
 
 .phone:before {
-    content: url(img/home_0004s_0003_Phone.png);
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -413px 0px;
+    width: 10px;
+    height: 11px;
     margin-right: 8px;
 }
 
@@ -337,23 +380,48 @@ h1 a :nth-child(1n) {
 }
 
 .rss:before {
-    content: url(img/rss.png)
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -263px 0px;
+    width: 30px;
+    height: 30px;
 }
 
 .facebook:before {
-    content: url(img/facebook.png)
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -293px 0px;
+    width: 30px;
+    height: 30px;
 }
 
 .twitter:before {
-    content: url(img/twitter.png)
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -323px 0px;
+    width: 30px;
+    height: 30px;
 }
 
 .dribbble:before {
-    content: url(img/dribbble.png)
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -353px 0px;
+    width: 30px;
+    height: 30px;
 }
 
 .pinterest:before {
-    content: url(img/pinterest.png)
+    display: inline-block;
+    content: " ";
+    background: url(img/sprite.png) no-repeat;
+    background-position: -383px 0px;
+    width: 30px;
+    height: 30px;
 }
 
 .copyright {
