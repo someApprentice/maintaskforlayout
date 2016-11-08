@@ -34,7 +34,7 @@ body {
     margin: 0px;
 }
 
-a, a:visited {
+a {
     color: #d9d9d9;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ b {
     font-family: LatoBlack;
 }
 
-i {
+em {
     font-family: LatoLightItalic;
 
     /* firefox rendering fix */
@@ -92,6 +92,7 @@ h1 a {
     font-weight: normal;
 }
 
+
 h1 a:before {
     content: " ";    
     background: url(img/sprite.png) no-repeat;
@@ -111,9 +112,10 @@ h1 a :nth-child(1n) {
 }
 
 .header ul {
+    float: right;
     font-family: LatoBlack;
     font-size: 13px;
-    float: right;
+    text-transform: uppercase;
     margin: 0px;
     padding: 45px 0;
 }
@@ -122,6 +124,7 @@ h1 a :nth-child(1n) {
 .header ul li {
     display: inline;
 }
+
 
 /* :nth-child(1n) - redefinition for other browsers; */
 .header ul :nth-child(1n) {
@@ -154,6 +157,7 @@ h1 a :nth-child(1n) {
 .slider a {
     font-family: LatoBlack;
     font-size: 14px;
+    text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
     padding: 0 44px;
@@ -170,7 +174,7 @@ h1 a :nth-child(1n) {
     padding: 95px 0 90px 0;
 }
 
-.services .content div {
+.services .content .box {
     display: inline-block;
     margin-right: 40px;
     color: #616161;
@@ -182,7 +186,6 @@ h1 a :nth-child(1n) {
 }
 
 .consectetur::before {
-    content: " ";
     background: url(img/sprite.png) no-repeat;
     background-position: 0px 0px;
 
@@ -193,7 +196,6 @@ h1 a :nth-child(1n) {
 }
 
 .tristiquet::before {
-    content: " ";
     background: url(img/sprite.png) no-repeat;
     background-position: -47px 0px;
 
@@ -204,7 +206,6 @@ h1 a :nth-child(1n) {
 }
 
 .fermentum::before {
-    content: " ";
     background: url(img/sprite.png) no-repeat;
     background-position: -109px 0px;
 
@@ -215,7 +216,6 @@ h1 a :nth-child(1n) {
 }
 
 .elitultricies::before {
-    content: " ";
     background: url(img/sprite.png) no-repeat;
     background-position: -169px 0px;
 
@@ -225,18 +225,19 @@ h1 a :nth-child(1n) {
     height: 65px;
 }
 
-.services .content div h3::before {
+.services .content .box h3::before {
+    content: " ";
     display: block;
     margin-bottom: 31px;
 }
 
-.services .content div h3 {
+.services .content .box h3 {
     font-family: LatoBlack;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.services .content div p {
+.services .content .box p {
     font-family: LatoRegular;
     font-size: 14px;
     margin: 0;
@@ -271,16 +272,14 @@ h1 a :nth-child(1n) {
  
 .portfolio .content  label {
     display: inline-block;
-    color: #d9d9d9;
+    font-family: LatoBlack;
     font-size: 12px;
+    text-transform: uppercase;
+    color: #d9d9d9;
     margin-top: 59px;
     margin-bottom: 25px;
-    padding-left: 0px;
-}
-
-.portfolio .content  label {
-    font-family: LatoBlack;
     border-radius: 5px;
+    padding-left: 0px;
     padding: 13px 19px;
     background-color: #ff6760;
 }
