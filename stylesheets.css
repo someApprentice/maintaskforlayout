@@ -92,8 +92,8 @@ h1 a {
     font-weight: normal;
 }
 
-h1 a::before {
-    content: " ";
+h1 a:before {
+    content: " ";    
     background: url(img/sprite.png) no-repeat;
     background-position: -224px 0px;
 
@@ -107,7 +107,7 @@ h1 a::before {
 
 /* A versions older ie6 will hide symbol "W" from logo and show picture instead him */
 h1 a :nth-child(1n) {
- display: none;
+    display: none;
 }
 
 .header ul {
@@ -261,35 +261,36 @@ h1 a :nth-child(1n) {
     color: #616161;
 }
 
-.portfolio .content .filter {
+.portfolio .content  {
+}
+
+.portfolio .content  input {
+  position: absolute;
+  left: -10000px;
+}
+ 
+.portfolio .content  label {
+    display: inline-block;
+    color: #d9d9d9;
     font-size: 12px;
     margin-top: 59px;
     margin-bottom: 25px;
     padding-left: 0px;
 }
-.portfolio .content .filter input {
-  position: absolute;
-  left: -10000px;
-}
 
-.portfolio .content .filter label {
-    display: inline-block;
-    color: #d9d9d9;
-}
-
-.portfolio .content .filter label {
+.portfolio .content  label {
     font-family: LatoBlack;
     border-radius: 5px;
     padding: 13px 19px;
     background-color: #ff6760;
 }
 
-.portfolio .content .filter label:hover {
+.portfolio .content  label:hover {
     color: #d9d9d9;
     background-color: #595959;
 }
 
-.portfolio .content .filter input:checked + label {
+.portfolio .content  input:checked + label {
     color: #d9d9d9;
     background-color: #595959;
 }
@@ -303,9 +304,19 @@ h1 a :nth-child(1n) {
 }
 
 .portfolio .content .works img {
-    display: inline-block;
     padding: 5px 0;
     padding-right: 10px;
+}
+
+.portfolio .content  input:nth-of-type(1):checked ~ .works .all,
+.portfolio .content  input:nth-of-type(2):checked ~ .works .graphic,
+.portfolio .content  input:nth-of-type(3):checked ~ .works .illustration,
+.portfolio .content  input:nth-of-type(4):checked ~ .works .motion {
+    display: inline-block;
+}
+
+.portfolio .content .works img:nth-of-type(n) {
+    display: none;
 }
 
 .portfolio .content .works :nth-child(4n) {
