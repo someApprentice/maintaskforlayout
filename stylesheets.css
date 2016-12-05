@@ -43,28 +43,48 @@ html {
 }
 
 body {
-    color: #d9d9d9;
     margin: 0px;
 }
 
+.slider,
+.portfolio,
+.footer,
+.copyright {
+    color: #d9d9d9;
+}
+
 a {
+    color: #ff6760;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+b {
     font-weight: bold;
+}
+
+.slider,
+.portfolio,
+.footer {
+    font-weight: lighter;
+}
+
+.header a,
+.slider a,
+.footer a {
     font-style: normal;
     color: #d9d9d9;
     text-decoration: none;
 }
 
-a:hover {
+.header a:hover,
+.slider a:hover,
+.footer a:hover {
     color: #ff6760;
-}
-
-p {
-    font-weight: lighter;
-    font-style: normal;
-}
-
-b {
-    font-weight: bold;
+    text-decoration: none;
 }
 
 .header { 
@@ -88,12 +108,11 @@ b {
     font-family: ReklameScriptRegularDEMO;
     float: left;
     margin: 0;
-    margin-top: 38px;
+    margin-top: 28px;
     margin-bottom: 29px;
     margin-left: 40px;
 
     position: relative;
-    bottom: 10px;
 }
 
 .header h1 a {
@@ -115,36 +134,30 @@ b {
     top: 8px;
 }
 
-/* A versions older ie6 will hide symbol "W" from logo and show picture instead him */
-.header h1 a :nth-child(1n) {
+.header h1 a .W {
     display: none;
 }
 
-.header ul {
+.header-menu {
     float: right;
     font-size: 13px;
+    font-weight: bold;
     text-transform: uppercase;
     margin: 0px;
     padding: 45px 0;
 }
 
-/* defenition for ie6-7 */
-.header ul li {
-    display: inline;
-}
-
-
-/* :nth-child(1n) - redefinition for other browsers; */
-.header ul :nth-child(1n) {
+.header-menu li {
     display: inline-block;
     padding-right: 30px;
 }
 
-.header ul :last-child {
+.header-menu :last-child {
     padding-right: 0;
 }
 
 .slider {
+    font-size: 40px;
     line-height: 50px;
     padding: 60px 0;
     background-color: #2a2a2a;
@@ -156,12 +169,9 @@ b {
     margin: 10px 0;
 }
 
-.slider p {
-    font-size: 40px;
-}
-
-.slider a {
+.slider-button, .portfolio-button {
     font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
@@ -169,7 +179,7 @@ b {
     background-color: #ff6760;
 }
 
-.slider a:hover {
+.slider .slider-button:hover, .slider .portfolio-button:hover {
     color: #d9d9d9;
     background-color: #595959;
 }
@@ -190,42 +200,27 @@ b {
     margin-right: 0px;
 }
 
-.consectetur::before {
-    background: url(img/sprite.png) no-repeat;
+.services .content .box .consectetur::before {
     background-position: 0px 0px;
-
-    margin: 0 auto;
-
     width: 47px;
     height: 54px;
 }
 
-.tristiquet::before {
-    background: url(img/sprite.png) no-repeat;
+.services .content .box .tristiquet::before {
     background-position: -47px 0px;
-
-    margin: 0 auto;
 
     width: 62px;
     height: 59px;
 }
 
-.fermentum::before {
-    background: url(img/sprite.png) no-repeat;
+.services .content .box .fermentum::before {
     background-position: -109px 0px;
-
-    margin: 0 auto;
-
     width: 60px;
     height: 56px;
 }
 
-.elitultricies::before {
-    background: url(img/sprite.png) no-repeat;
+.services .content .box .elitultricies::before {
     background-position: -169px 0px;
-
-    margin: 0 auto;
-
     width: 55px;
     height: 65px;
 }
@@ -233,7 +228,9 @@ b {
 .services .content .box h3::before {
     content: " ";
     display: block;
+    background: url(img/sprite.png) no-repeat;
     margin-bottom: 31px;
+    margin: 0 auto;
 }
 
 .services .content .box h3 {
@@ -326,6 +323,7 @@ b {
 }
 
 .footer {
+    font-size: 20px;
     color: #bebebe;
     padding: 60px 0;
     background-color: #313131;
@@ -336,10 +334,6 @@ b {
     color: #e0e0e0;
     margin-top: 0;
     margin-bottom: 26px;
-}
-
-.footer p {
-    font-size: 20px;
 }
 
 .address {
@@ -376,68 +370,54 @@ b {
     margin-right: 8px;
 }
 
-.footer .content ul {
+.footer .content .contacts {
     margin-top: 30px;
 }
 
-/* defenition for ie6-7 */
-.footer .content ul li {
-    display: inline;
-}
-
-/* :nth-child(1n) - redefinition for other browsers; */
-.footer .content ul  :nth-child(1n) {
+.footer .content .contacts li {
     display: inline-block;
     margin-right: 7px;
 }
 
-.footer .content ul :last-child {
-    margin-right: 0px;
-}
 
-.rss:before {
+.footer .content .contacts li a:before {
     display: inline-block;
     content: " ";
     background: url(img/sprite.png) no-repeat;
+}
+
+.footer .content .contacts li .rss:before {
     background-position: -263px 0px;
     width: 30px;
     height: 30px;
 }
 
-.facebook:before {
-    display: inline-block;
-    content: " ";
-    background: url(img/sprite.png) no-repeat;
+.footer .content .contacts li .facebook:before {
     background-position: -293px 0px;
     width: 30px;
     height: 30px;
 }
 
-.twitter:before {
-    display: inline-block;
-    content: " ";
-    background: url(img/sprite.png) no-repeat;
+.footer .content .contacts li .twitter:before {
     background-position: -323px 0px;
     width: 30px;
     height: 30px;
 }
 
-.dribbble:before {
-    display: inline-block;
-    content: " ";
-    background: url(img/sprite.png) no-repeat;
+.footer .content .contacts li .dribbble:before {
     background-position: -353px 0px;
     width: 30px;
     height: 30px;
 }
 
-.pinterest:before {
-    display: inline-block;
-    content: " ";
-    background: url(img/sprite.png) no-repeat;
+.footer .content .contacts li .pinterest:before {
     background-position: -383px 0px;
     width: 30px;
     height: 30px;
+}
+
+.footer .content .contacts :last-child {
+    margin-right: 0px;
 }
 
 .copyright {

@@ -1,0 +1,24 @@
+.header h1 a .W {
+    display: inline;
+}
+
+/* defenition for ie6-7 */
+.header-menu li {
+    display: inline;
+}
+
+.services .content .box {
+    display: block;
+    color: #616161;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+.services .content .box h3 {
+    margin-bottom: 10px;
+}
+
+/* defenition for ie6-7 */
+.footer .content .contacts li {
+    display: inline;
+}
