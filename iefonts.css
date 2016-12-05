@@ -1,0 +1,84 @@
+@font-face {
+    font-family: ReklameScriptRegularDEMO;
+    src: url('fonts/reklamescript-regular_demo-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url('fonts/lato-light-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url('fonts/lato-regular-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoBlack;
+    src: url('fonts/lato-black-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoLightItalic;
+    src: url('fonts/lato-lightitalic-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoItalic;
+    src: url('fonts/lato-italic-webfont.eot');
+}
+
+@font-face {
+    font-family: LatoBlackItalic;
+    src: url('fonts/lato-blackitalic-webfont.eot');
+}
+
+body {
+    font-family: LatoRegular, sans-serif;
+}
+
+h1 {
+    font-family: ReklameScriptRegularDEMO;
+}
+
+h2, h3, b {
+    font-family: LatoBlack;
+    font-weight: normal;
+    font-style: normal;
+}
+
+em {
+    font-family: LatoItalic;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.slider h2 {
+    font-family: LatoLight;
+    font-weight: normal;
+    font-style: normal;
+}
+
+ p {
+    font-family: LatoLight;
+    font-weight: normal;
+    font-style: normal;
+}
+
+p em {
+    font-family: LatoLightItalic;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box p {
+    font-family: LatoRegular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.address {
+    font-family: LatoRegular;
+    font-weight: normal;
+    font-style: normal;
+}
