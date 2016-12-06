@@ -22,3 +22,7 @@
 .footer .content .contacts li {
     display: inline;
 }
+
+.footer .content .contacts li a span {
+    display: inline;
+}

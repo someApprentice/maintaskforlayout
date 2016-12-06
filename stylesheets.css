@@ -413,6 +413,10 @@ b {
     height: 30px;
 }
 
+.footer .content .contacts li a span {
+    display: none;
+}
+
 .footer .content .contacts :last-child {
     margin-right: 0px;
 }
