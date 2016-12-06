@@ -229,8 +229,8 @@ b {
     content: " ";
     display: block;
     background: url(img/sprite.png) no-repeat;
-    margin-bottom: 31px;
     margin: 0 auto;
+    margin-bottom: 31px;
 }
 
 .services .content .box h3 {
@@ -240,6 +240,7 @@ b {
 
 .services .content .box p {
     font-size: 14px;
+    line-height: 24px;
     font-weight: normal;
     margin: 0;
 }
