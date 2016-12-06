@@ -300,12 +300,12 @@ b {
     font-size: 0px;
     display: table;
 
-    margin: 25px 0 20px 0;
+    margin: 25px 0 20px -10px;
 }
 
 .portfolio .content .works img {
+    margin-left: 10px;
     padding: 5px 0;
-    padding-right: 10px;
 }
 
 .portfolio .content  input:nth-of-type(1):checked ~ .works .all,
@@ -317,10 +317,6 @@ b {
 
 .portfolio .content .works img:nth-of-type(n) {
     display: none;
-}
-
-.portfolio .content .works :nth-child(4n) {
-    padding-right: 0px;
 }
 
 .footer {
