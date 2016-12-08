@@ -105,7 +105,7 @@ b {
 }
 
 .header h1 {
-    font-family: ReklameScriptRegularDEMO;
+    font-family: ReklameScriptRegularDEMO, Cambria;
     float: left;
     margin: 0;
     margin-top: 28px;
