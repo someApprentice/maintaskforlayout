@@ -439,6 +439,18 @@ b {
         width: auto;
     }
 
+    .header h1 {
+        padding: 0 15px;
+    }
+
+    .header-menu {
+        padding: 45px 15px;
+    }
+
+    .header h1 a:before {
+        left: -25px;
+    }
+
     .services .content .box {
         display: block;
         margin: 0 auto;
