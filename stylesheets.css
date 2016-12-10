@@ -377,37 +377,37 @@ b {
 }
 
 
-.footer .content .contacts li a:before {
+.footer .content .contacts li a::before {
     display: inline-block;
     content: " ";
     background: url(img/sprite.png) no-repeat;
 }
 
-.footer .content .contacts li .rss:before {
+.footer .content .contacts li .rss::before {
     background-position: -263px 0px;
     width: 30px;
     height: 30px;
 }
 
-.footer .content .contacts li .facebook:before {
+.footer .content .contacts li .facebook::before {
     background-position: -293px 0px;
     width: 30px;
     height: 30px;
 }
 
-.footer .content .contacts li .twitter:before {
+.footer .content .contacts li .twitter::before {
     background-position: -323px 0px;
     width: 30px;
     height: 30px;
 }
 
-.footer .content .contacts li .dribbble:before {
+.footer .content .contacts li .dribbble::before {
     background-position: -353px 0px;
     width: 30px;
     height: 30px;
 }
 
-.footer .content .contacts li .pinterest:before {
+.footer .content .contacts li .pinterest::before {
     background-position: -383px 0px;
     width: 30px;
     height: 30px;
@@ -450,7 +450,6 @@ b {
     .header h1 a:before {
         left: -25px;
     }
-
     .services .content .box {
         display: block;
         margin: 0 auto;
@@ -494,5 +493,14 @@ b {
         float: none;
         margin: 20px 0;
         padding: 0;
+    }
+
+    .slider {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .slider h2 {
+        font-size: 30px;
     }
 }
