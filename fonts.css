@@ -1,0 +1,39 @@
+@font-face {
+    font-family: ReklameScriptRegularDEMO;
+    src: url('fonts/ReklameScript-Regular_DEMO-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/ReklameScript-Regular_DEMO.woff') format('woff'), url('fonts/ReklameScript-Regular_DEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-light-webfont.woff') format('woff'), url('fonts/lato-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-regular-webfont.woff') format('woff'), url('fonts/lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-black-webfont.woff') format('woff'), url('fonts/lato-Black.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-lightitalic-webfont.woff') format('woff'), url('fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/lato-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-blackitalic.woff') format('woff'), url('fonts/lato-BlackItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
