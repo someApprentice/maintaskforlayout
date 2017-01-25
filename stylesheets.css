@@ -218,12 +218,9 @@ b {
     margin-bottom:  26px;
 }
 
-.portfolio .content p {
+.portfolio .content  {
     font-size: 20px;
     color: #616161;
-}
-
-.portfolio .content  {
 }
 
 .portfolio .content  input {
