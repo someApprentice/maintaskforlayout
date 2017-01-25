@@ -338,36 +338,28 @@ b {
     display: inline-block;
     content: " ";
     background: url(img/sprite.png) no-repeat;
+    width: 30px;
+    height: 30px;
 }
 
 .footer .content .contacts li .rss::before {
     background-position: -263px 0px;
-    width: 30px;
-    height: 30px;
 }
 
 .footer .content .contacts li .facebook::before {
     background-position: -293px 0px;
-    width: 30px;
-    height: 30px;
 }
 
 .footer .content .contacts li .twitter::before {
     background-position: -323px 0px;
-    width: 30px;
-    height: 30px;
 }
 
 .footer .content .contacts li .dribbble::before {
     background-position: -353px 0px;
-    width: 30px;
-    height: 30px;
 }
 
 .footer .content .contacts li .pinterest::before {
     background-position: -383px 0px;
-    width: 30px;
-    height: 30px;
 }
 
 .footer .content .contacts li a span {
